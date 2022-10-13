@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../themes/おジャコ potfleo"
+		},
+		{
+			"path": "../custom-dlblock"
+		},
+		{
+			"path": "../custom-slider"
+		},
+		{
+			"path": "../oja-code-gutenberg"
+		},
+		{
+			"path": "../oja-related-post-block"
+		},
+		{
+			"path": "."
+		}
+	]
+}
