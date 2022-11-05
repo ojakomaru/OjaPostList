@@ -2,12 +2,17 @@
 .wp-block-oja-post-list {
   min-height: initial;
   padding: 0;
+  margin: 20px 0 20px;
   figure {
     margin: 0;
   }
 }
 
 .ojaPostListType, .ojaPostListDesign {
+  div[data-wp-component="VStack"] {
+    flex-direction: row;
+    width: 100%;
+  }
   .components-base-control__field {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +22,7 @@
     }
 
     .components-radio-control__option {
-      width: 30%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       

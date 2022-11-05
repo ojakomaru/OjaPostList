@@ -163,6 +163,11 @@
     }
   }
   &.text {
+    ul.post-list-container {
+      li {
+        padding-top: 15px;
+      }
+    }
     .post_content {
       padding: 25px 10px !important;
       @media screen and (max-width:543px) {
