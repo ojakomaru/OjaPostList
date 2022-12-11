@@ -4,16 +4,57 @@
   "name": "oja/post-list",
   "version": "0.1.0",
   "title": "Oja Post List Block",
-  "category": "text",
-  "icon": "smiley",
   "description": "記事リストを表示するブロックです",
+  "category": "common",
+  "icon": "smiley",
   "keywords": [
     "post",
-    "oja",
+    "ojapost",
+    "postlist",
     "list"
   ],
   "supports": {
+    "customClassName": false,
+    "anchor": false,
     "html": false
+  },
+  "attributes": {
+    "postListType": {
+      "type": "string",
+      "enum": [
+        "post",
+        "category",
+        "tag"
+      ],
+      "default": "post"
+    },
+    "isTimeStamp": {
+      "type": "boolean",
+      "default": true
+    },
+    "isPostLabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPostNumber": {
+      "type": "number",
+      "default": 6
+    },
+    "postDesign": {
+      "type": "string",
+      "default": "cade"
+    },
+    "postOrder": {
+      "type": "string",
+      "default": "DESC"
+    },
+    "postOrderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "termId": {
+      "type": "number"
+    }
   },
   "textdomain": "post-list",
   "editorScript": "file:./index.js",

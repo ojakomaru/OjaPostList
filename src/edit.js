@@ -141,6 +141,6 @@ export default function Edit(props) {
 				}}
 				className="oja-server-siderender"
 			/>
-		</div>,
+		</div>
 	];
 }

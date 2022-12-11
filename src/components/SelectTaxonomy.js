@@ -2,7 +2,7 @@ import { SelectControl } from "@wordpress/components";
 import apiFetch from "@wordpress/api-fetch";
 import React from "react";
 
-const categories = [{ label: "選択して下さい", value: -1 }];
+const categories = [{ label: "カテゴリを選択", value: -1 }];
 apiFetch({ path: "/wp/v2/oja_cat?per_page=-1_fields=name,slug,id" }).then(
 	(cates) => {
 		cates.forEach((cate) => {
@@ -11,7 +11,7 @@ apiFetch({ path: "/wp/v2/oja_cat?per_page=-1_fields=name,slug,id" }).then(
 	}
 );
 
-const postTags = [{ label: "選択して下さい", value: -1 }];
+const postTags = [{ label: "タグを選択", value: -1 }];
 apiFetch({ path: "/wp/v2/oja_tags?per_page=-1_fields=name,slug,id" }).then(
 	(tags) => {
 		tags.forEach((tag) => {
